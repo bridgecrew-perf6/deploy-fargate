@@ -47,11 +47,7 @@ export AWS_PROFILE=private
 
 #### 2.2. set deploy config
 
-set deploy config files.
-
-[task-definition.json](./example/task-definition.json)
-
-[deploy_env.yaml](./example/deploy_env.yaml)
+set [deploy config files](./example/README.md).
 
 #### 2.3. install npm package
 

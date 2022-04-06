@@ -6,7 +6,7 @@ env:
   MEMORY: 512
   TASK_ROLE: "ECSTaskRole_example"
   EXECUTION_ROLE: "ECSTaskExecRole_example"
-  CONTAINER_NAME: "example"
+  CONTAINER_NAME: "example_container"
   AWSLOGS_GROUP: "/aws/ecs/example-ecs-cluster"
   AWSLOGS_REGION: "ap-northeast-1"
   AWSLOGS_STREAM_PREFIX: "example-ecs-service"
