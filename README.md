@@ -29,7 +29,11 @@ export AWS_PROFILE=private
 
 #### 2.2. set deploy config
 
-TBD
+set deploy config files.
+
+[task-definition.json](./example/task-definition.json)
+
+[deploy_env.yaml](./example/deploy_env.yaml)
 
 #### 2.3. install npm package
 

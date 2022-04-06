@@ -12,7 +12,9 @@ async function main(args) {
 
   // eslint-disable-next-line no-console
   console.log(`AWS Account  | ${awsAccountId}`);
+  // eslint-disable-next-line no-console
   console.log(`Environment  | ${environment}`);
+  // eslint-disable-next-line no-console
   console.log(`AWS ECR NAME | ${AWS_ECR_REPOSITORY_NAME}`);
 
   const ecrNewTag = await build(awsAccountId);
