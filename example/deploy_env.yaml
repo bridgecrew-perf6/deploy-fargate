@@ -1,5 +1,5 @@
 env:
-  ECS_CLUSTER_NAME: "/aws/ecs/example-ecs-cluster"
+  ECS_CLUSTER_NAME: "example-ecs-cluster"
   ECS_SERVICE_NAME: "example-ecs-service"
   FAMILY: "example-ecs-task"
   CPU: 256

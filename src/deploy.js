@@ -26,7 +26,7 @@ export async function deploy(ecrNewTag) {
   let cmd;
 
   // update taskDefinition
-  cmd = `aws ecs register-task-definition --cli-input-json file://${taskDefinitionFile} --output json taskDefinition.taskDefinitionArn`;
+  cmd = `aws ecs register-task-definition --cli-input-json file://${taskDefinitionFile} --output json --query taskDefinition.taskDefinitionArn`;
   const taskDefinitionArn = await execute(cmd);
   // eslint-disable-next-line no-console
   console.log(taskDefinitionArn);
