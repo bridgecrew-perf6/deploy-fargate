@@ -5,7 +5,7 @@ const AWS_REGION = 'ap-northeast-1';
 // AWS PROFILE NAME
 const AWS_PROFILE_NAME = 'private';
 // AWS ECR REPOSITORY NAME
-const AWS_ECR_REPOSITORY_NAME = 'myecr';
+const AWS_ECR_REPOSITORY_NAME = 'example-ecr';
 // APPLICATION ROOT PATH
 const APP_PATH = './example/';
 // FARGATE TASK DEFINITION TEMPLATE FILE PATH

@@ -1,5 +1,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 **Table of Contents**
 
 - [deploy-fargate](#deploy-fargate)
@@ -17,7 +18,7 @@
 
 # deploy-fargate
 
-deploy container image into AWS Fargate on Local Environment.
+This repository is the helper to deploy container image into AWS Fargate from Local Environment.
 
 ## For User
 
