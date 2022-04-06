@@ -1,0 +1,32 @@
+{
+  "name": "deploy-fargate",
+  "version": "1.0.0",
+  "description": "push container image into aws ecr $ deploy fargate",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "format": "npm run prettier && npm run eslint",
+    "eslint": "./node_modules/eslint/bin/eslint.js --ext .js --ignore-path .gitignore . --fix",
+    "prettier": "./node_modules/prettier/bin-prettier.js --write .",
+    "test": "jest --silent",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{json,yaml,yml,md}": "npm run prettier",
+    "*.{js}": "npm run format"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1109.0",
+    "child_process": "^1.0.2",
+    "js-yaml": "^4.1.0",
+    "util": "^0.12.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.2"
+  }
+}
