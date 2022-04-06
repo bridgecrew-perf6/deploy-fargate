@@ -1,10 +1,15 @@
 {
   "family": "<FAMILY>",
   "networkMode": "awsvpc",
+  "cpu": "<CPU>",
+  "memory": "<MEMORY>",
+  "taskRoleArn": "<TASK_ROLE>",
+  "executionRoleArn": "<EXECUTION_ROLE>",
+  "requiresCompatibilities": ["FARGATE"],
   "containerDefinitions": [
     {
       "name": "<CONTAINER_NAME>",
-      "image": "",
+      "image": "<CONTAINER_IMAGE>",
       "portMappings": [
         {
           "containerPort": 80,
@@ -15,21 +20,13 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "/aws/ecs/<AWS_LOGS_GROUP>",
-          "awslogs-region": "<AWS_REGION>",
+          "awslogs-group": "<AWSLOGS_GROUP>",
+          "awslogs-region": "<AWSLOGS_REGION>",
           "awslogs-create-group": "true",
-          "awslogs-stream-prefix": "<CONTAINER_NAME>"
+          "awslogs-stream-prefix": "<AWSLOGS_STREAM_PREFIX>"
         }
       },
       "essential": true
     }
-  ],
-  "runtimePlatform": {
-    "cpuArchitecture": "X86_64",
-    "operatingSystemFamily": "LINUX"
-  },
-  "requiresCompatibilities": ["FARGATE"],
-  "executionRoleArn": "<EXECUTION_ROLE_ARN>",
-  "cpu": "<CPU>",
-  "memory": "<MEMORY>"
+  ]
 }

@@ -10,9 +10,11 @@ export async function execute(cmd) {
   if (error) {
     // eslint-disable-next-line no-console
     console.error(`error | ${error}`);
+    // eslint-disable-next-line no-console
     console.error(`stderr | ${stderr}`);
     process.exit(1);
   }
+  // eslint-disable-next-line no-console
   console.log(`stdout | ${stdout}`);
   return stdout;
 }
