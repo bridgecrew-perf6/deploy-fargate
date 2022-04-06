@@ -5,6 +5,7 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "push:dev": "./bin/push.js dev",
     "deploy:dev": "./bin/deploy.js dev",
     "format": "npm run prettier && npm run eslint",
     "eslint": "./node_modules/eslint/bin/eslint.js --ext .js --ignore-path .gitignore . --fix",
