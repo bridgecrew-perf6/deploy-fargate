@@ -1,12 +1,12 @@
 module.exports = {
   root: true,
   env: {
-    browser:  false,
+    browser: false,
     es2021: true,
   },
-  extends: ['airbnb-base', 'plugin:import/recommended'],
+  extends: ["airbnb-base", "plugin:import/recommended"],
   parserOptions: {
-    ecmaVersion: 'latest',
+    ecmaVersion: "latest",
     sourceType: "module",
   },
   plugins: ["import"],
@@ -16,11 +16,8 @@ module.exports = {
       "error",
       "ignorePackages",
       {
-        ignorePackages: true,
-        pattern: {
-          js: "always"
-        }
-      }
-    ]
+        js: "always",
+      },
+    ],
   },
-}
+};
