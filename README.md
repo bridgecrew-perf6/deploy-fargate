@@ -1,6 +1,6 @@
 # deploy-fargate
-deploy container image into AWS fargate
 
+deploy container image into AWS fargate
 
 ## For User
 
@@ -22,9 +22,7 @@ npm run deploy:dev
 ### install npm package
 
 '''
-docker run -it -v $PWD:/usr/src/app --rm node:16.14.2-slim npm install -g npm && npm install 
+docker run -it -v $PWD:/usr/src/app --rm node:16.14.2-slim npm install -g npm && npm install
 '''
-
-
 
 ## For Contributor
